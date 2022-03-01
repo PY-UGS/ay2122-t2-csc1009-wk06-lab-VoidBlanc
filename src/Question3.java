@@ -9,9 +9,9 @@ public class Question3 {
         for (int i = 0; i < 500; i++){
             list.add((int) ((Math.random() * range) + 1000));
         }
-
+        int searchval = (int)((Math.random() * range) + 1000);
         System.out.println("List    : " + list);
-        System.out.println("Search  : " + findValue(list, (int) ((Math.random() * range) + 1000)));
+        System.out.println("Position of " + searchval +" : " + findValue(list, searchval));
     }
 
     public static int findValue(LinkedList<Integer> list, int searchVal){
